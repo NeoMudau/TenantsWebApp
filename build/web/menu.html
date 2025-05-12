@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Management Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #F0FFF0;
+            color: #2e8b57;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li button {
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #32CD32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        ul li button:hover {
+            background-color: #228B22;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tenant Management</h1>
+    <p>Welcome to the Tenant Management System. Please select an option below:</p>
+    <ul>
+        <li>
+            <form action="add_tenant.jsp" method="GET">
+                <button type="submit">Add Tenant</button>
+            </form>
+        </li>
+        <li>
+            <form action="editTenant.jsp" method="GET">
+                <button type="submit">Edit Tenant</button>
+            </form>
+        </li>
+        <li>
+            <form action="viewTenants.jsp" method="GET">
+                <button type="submit">View Tenants</button>
+            </form>
+        </li>
+        <li>
+            <form action="removeTenant.jsp" method="GET">
+                <button type="submit">Remove Tenant</button>
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
