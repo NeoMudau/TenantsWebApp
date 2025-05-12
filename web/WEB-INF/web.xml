@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddTenantServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.AddTenantServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditTenantServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.EditTenantServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewTenantServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.ViewTenantServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveTenantServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.RemoveTenantServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTenantServlet</servlet-name>
+        <url-pattern>/AddTenantServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditTenantServlet</servlet-name>
+        <url-pattern>/EditTenantServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewTenantServlet</servlet-name>
+        <url-pattern>/ViewTenantServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveTenantServlet</servlet-name>
+        <url-pattern>/RemoveTenantServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
